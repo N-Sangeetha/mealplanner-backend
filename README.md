@@ -1,4 +1,4 @@
-# Tweety-api
+# meal planner backend
 
 # npm install
 

@@ -1,10 +1,14 @@
 const express = require('express');
-require('./src/db/mongoose');
+const connectDB = require('./src/db/mongoose');
 const plannerRouter = require('./src/routers/planner');
 const recipesRouter = require('./src/routers/recipes');
 const app = express();
 const port = process.env.PORT || 5000;
 
+// Connect Database
+connectDB();
+
+// Init Middleware
 app.use(express.json());
 
 app.use(function (req, res, next) {
@@ -17,6 +21,7 @@ app.use(function (req, res, next) {
 	next();
 });
 
+//Routes
 app.use(plannerRouter);
 app.use(recipesRouter);
 

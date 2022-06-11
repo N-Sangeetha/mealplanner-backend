@@ -2,6 +2,18 @@ const express = require('express');
 const Planner = require('../model/planner');
 const router = new express.Router();
 
+router.get("/", async (req, res) => {
+  try {
+    res.json({
+      status: 200,
+      message: "Get data has successfully",
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send("Server error");
+  }
+});
+
 //add planner
 router.post('/add-planner', async (req, res) => {
 	const planner = new Planner(req.body);

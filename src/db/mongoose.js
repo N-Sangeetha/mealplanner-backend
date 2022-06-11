@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const username = encodeURIComponent('vercel-admin-user')
-const password = encodeURIComponent('Bokko@456')
-const cluster = encodeURIComponent('cluster0.fz8tz.mongodb.net')
+const username = encodeURIComponent('sangeetha')
+const password = encodeURIComponent('sangeetha123')
+const cluster = encodeURIComponent('cluster0.okynr.mongodb.net')
 // mongoose.connect('mongodb://127.0.0.1:27017/mealplanner-api', {
 // mongoose.connect('mongodb+srv://vercel-admin-user:Bokko@456@cluster0.fz8tz.mongodb.net/?retryWrites=true&w=majority', {
 // 	useUnifiedTopology: true,

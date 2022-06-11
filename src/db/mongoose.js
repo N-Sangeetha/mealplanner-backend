@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://vercel-admin-user:Bokko@456@cluster0.fz8tz.mongodb.net/?retryWrites=true&w=majority', {
+    await mongoose.connect('mongodb+srv://vercel-admin-user:' + encodeURIComponent('Bokko@456') +'@cluster0.fz8tz.mongodb.net/?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,

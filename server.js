@@ -1,6 +1,7 @@
 const express = require('express');
 require('./src/db/mongoose');
-const tweetsRouter = require('./src/routers/tweets');
+const plannerRouter = require('./src/routers/planner');
+const recipesRouter = require('./src/routers/recipes');
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -16,7 +17,8 @@ app.use(function (req, res, next) {
 	next();
 });
 
-app.use(tweetsRouter);
+app.use(plannerRouter);
+app.use(recipesRouter);
 
 app.listen(port, () => {
 	console.log('Server is up on port ' + port);

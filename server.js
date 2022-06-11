@@ -7,6 +7,10 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 
+app.get("/api", (req, res) => {
+res.send("test")
+})
+
 app.use(function (req, res, next) {
 	res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Methods', 'GET, PUT, PATCH, POST, DELETE');

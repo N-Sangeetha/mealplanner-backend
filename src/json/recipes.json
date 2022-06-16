@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Oatmeal",
+    "image": "",
+    "totalTime": "15mins",
+    "ingredients": [
+      {
+        "measurement": "1 cup",
+        "name": "Rolled Oats"
+      },
+      {
+        "measurement": "1 cup",
+        "name": "Milk"
+      },
+      {
+        "measurement": "1 tsp",
+        "name": "Honey"
+      },
+      {
+        "measurement": "1 tsp",
+        "name": "Peanut butter"
+      },
+      {
+        "measurement": "1 tsp",
+        "name": "Chia seeds"
+      },
+      {
+        "measurement": "1/2 cup",
+        "name": "your choice of fruits"
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "description": "Add milk in a pan and bring to a boil."
+      },
+      {
+        "step": 2,
+        "description": "Stir in oats and reduce heat to medium. cook for 13mins, remove from heat."
+      },
+      {
+        "step": 3,
+        "description": "Serve with your toppings such as fruits and nuts"
+      }
+    ]
+  }
+]

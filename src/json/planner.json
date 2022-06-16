@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Everyday Meals",
+    "mealPlan": [
+      {
+        "name": "Breakfast",
+        "recipes": []
+      },
+      {
+        "name": "Lunch",
+        "recipes": []
+      },
+      {
+        "name": "Dinner",
+        "recipes": []
+      }
+    ]
+  },
+  {
+    "name": "Keto Meals",
+    "mealPlan": [
+      {
+        "name": "Breakfast",
+        "recipes": []
+      },
+      {
+        "name": "Lunch",
+        "recipes": []
+      },
+      {
+        "name": "Dinner",
+        "recipes": []
+      }
+    ]
+  }
+]

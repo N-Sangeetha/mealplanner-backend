@@ -1,6 +1,23 @@
 const express = require('express');
 const Recipes = require('../model/recipes');
 const router = new express.Router();
+const fs = require("fs");
+
+//import recipe json
+router.get("/insert-recipe-json", async (req, res) => {
+  try {
+    let data = fs.readFileSync("./src/json/recipes.json");
+    data = JSON.parse(data);
+    Recipes.insertMany(data);
+    res.status(200).send({ 
+			success: true, 
+			response: { code: 200, message: "successfully imported Recipes json data to mongoDB" }
+		});
+  } catch (error) {
+    console.error(error);
+    return res.send(error);
+  }
+});
 
 //add recipe
 router.post('/add-recipe', async (req, res) => {

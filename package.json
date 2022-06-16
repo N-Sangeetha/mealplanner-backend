@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.20",
     "twit": "^2.2.11"

@@ -22,8 +22,8 @@ app.use(function (req, res, next) {
 });
 
 //Routes
-app.use(plannerRouter);
-app.use(recipesRouter);
+app.use('/api', plannerRouter);
+app.use('/api', recipesRouter);
 
 app.listen(port, () => {
 	console.log('Server is up on port ' + port);
